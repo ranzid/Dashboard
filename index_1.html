@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+  <meta charset="UTF-8">
+  <title>Basic Donut Chart</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,500'>
+<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body  onload="drawRectangle('myCanvas1',[3,7,3,6,10,2,5,7,9,1,4,2],80,10,'General Results');drawRectangle1('myCanvas2',[3,7,3,6,10,2,5,7,3,7,6,1],80,10,'Rating By Category');ch1('#chart');ch1('#chart1');">
+<div>
+
+
+<div class="container">
+  <div class="row">
+<div class="v_tab" align="center" style="padding-left: : 90%">
+  <button class="v_tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+  <button class="v_tablinks" onclick="openTab(event, 'Campaigns')">Campaigns</button>
+  <button class="v_tablinks" onclick="openTab(event, 'Analytics')">Analytics</button>
+</div></div></div>
+
+<div id="Overview" class="v_tabcontent">
+
+<div class="tab">
+<button class="btn" onclick="OpenTab(event, 'Dashboard')" id="defaultOpen"><i class="fa fa-home"></i></button>
+<button class="btn"  onclick="OpenTab(event, 'Settings')"><i class="fa fa-bars"></i></button>
+<button class="btn"  onclick="OpenTab(event, 'Mail')"><i class="fa fa-envelope"></i></button>
+<button class="btn"  onclick="OpenTab(event, 'Profile')"><i class="fa fa-globe"></i></button>
+<button class="btn"  onclick="OpenTab(event, 'Folder')"><i class="fa fa-folder"></i></button>
+</div>
+
+<div id="Dashboard" class="tabcontent">
+    <div style="display:flex">
+<!--     <div style="" class="con1"> 
+     <div>
+    <canvas id="myCanvas1" style="width:300px;height:150px;"></canvas>
+  </div>
+  <div id="chart"  class="chart-container">
+    </div>
+  </div>
+ --> 
+<!--   <div class="con1">
+ <div>
+    <canvas id="myCanvas2" style="width:300px;height:150px;"></canvas>
+  </div>
+  <div id="chart1"  class="chart-container">
+    </div>
+  </div> -->
+  <div class="container">
+    <div  class="row">
+      <div class="col-md-2" >
+         <canvas id="myCanvas1" style="width:250px;height:150px;"></canvas>  
+      </div>
+      <div id="chart" class="col-md-3">
+      </div>
+            <div class="col-md-2" >
+         <canvas id="myCanvas2" style="width:250px;height:150px;">           
+         </canvas> 
+      </div>
+ <div id="chart1" class="col-md-2">
+      </div>
+      <div class="col-md-3">
+        <p class="contxt1" style="color: #000000"> 
+  TERM 1 <span style="padding-right: 20px"></span> 85.08
+  <BR>
+  TERM 2 <span style="padding-right: 20px"></span> 3.76
+  <br>
+  TERM 3 <span style="padding-right: 20px"></span> 33.42
+  <BR>
+  TERM 4 <span style="padding-right: 20px"></span> 75.11
+</BR>
+</p>
+      </div>
+    </div>
+  </div>
+  <div >
+  </div>
+<!-- <div class="container">
+  <div class="row">
+    <div >
+<div style="width: 55%" >
+<p class="contxt1" style="color: #000000"> 
+  TERM 1 <span style="padding-right: 20px"></span> 85.08
+  <BR>
+  TERM 2 <span style="padding-right: 20px"></span> 3.76
+  <br>
+  TERM 3 <span style="padding-right: 20px"></span> 33.42
+  <BR>
+  TERM 4 <span style="padding-right: 20px"></span> 75.11
+</BR>
+</p>
+</div></div></div></div> -->
+</div> 
+
+<!--div class="container">
+  
+<div style="width: 55%" >
+<p class="contxt1" style="color: #000000"> 
+  <div class="row">
+    <div class="col-md-4 ">TERM 1  85.08</div></div>
+    <div class="row">
+    <div class="col-md-4 ">TERM 1  85.08</div></div>
+    <div class="row">
+    <div class="col-md-4 ">TERM 1  85.08</div></div>
+    <div class="row">
+    <div class="col-md-4 ">TERM 1  85.08</div></div>
+  </p></div></div-->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+  <h3>Support Requests</h3></div></div>
+  <div class="row">
+  <div class="col-md-2" >
+    <div class="blk">
+    NAME<br><br>Cecilia Wetch<br><br>Sara glover<br><br>Harriett Morgan<br><br>Susie Curry<br><br>Edgar Greer<br><br>Minarva Massey</div></div>
+
+   <div class="col-md-3">
+    <div class="blk1">
+    EMAIL<br><br>heather_heeling@gottlieb.ca<br><br>floyd_brocus@lindgren.com<br><br>jabari.kilback@nelson.tv<br><br>theo_gleichner@kaia.org<br><br>ankunding_ralph@gmail.com<br><br>lia_purdy@yahoo.com</div></div>
+
+    <div class="col-md-1">
+      <div class="blk1">
+      TIME<br><br>01.06 AM<br><br>00.22 AM<br><br>12.22 AM<br><br>07.56 AM<br><br>08.35 AM<br><br>03.24 AM</div></div>
+
+     <div class="col-md-2">
+      <div class="blk1">
+      PHONE NUMBER<br><br>215-593-5846<br><br>057_812-3947<br><br>866_668_0327<br><br>647_851_5280<br><br>985_747_0063<br><br>488_514_5012</div>
+    </div>
+
+      <div class="col-md-2">
+       <div class="blk1">
+CITY<br><br>South Mariane<br><br>East Maryam<br><br>Monserattmouth<br><br>Lonnyburgh<br><br>Schmitfurt<br><br>South Lori</div></div>
+
+       <div class="col-md-1">STATUS<br>
+        <button class="button" id="1" onclick="chc1(1)">Send</button><br>
+        <button class="button" id="2" onclick="chc1(2)">Send</button><br>
+        <button class="button" id="3" onclick="chc1(3)">Send</button><br>
+        <button class="button" id="4" onclick="chc1(4)">Send</button><br>
+        <button class="button" id="5" onclick="chc1(5)">send</button><br>
+        <button class="button" id="6" onclick="chc1(6)">send</button></div>
+    </div>
+
+    
+
+
+ <!--div class="container">
+  <table class="table table-striped  table-hover table-condensed">
+    <p class="a">
+    <thead>
+      <tr>
+      <td class="blk1">NAME</td>
+      <th class="blk1">EMAIL</th>
+      <th class="blk1">TIME</th>
+      <th class="blk1">PHONE NUMBERS</th>
+      <th class="blk1">CITY</th>
+      <th class="blk1">STATUS</th>
+    </tr>
+  </thead>
+ <tbody>
+  <tr>
+      <td class="blk">Cecilia</td>
+      <td class="blk1">heather_keeling@got.ca</td>
+      <td class="blk1">01.06 AM</td>
+      <td class="blk1">7673574567</td>
+      <td class="blk1">South Mariane</td>
+       <td>
+      <button class="button">Send</button></td>
+  </tr>
+  <tr>
+      <td class="blk">Sara Glover</td>
+      <td class="blk1">floyd_brakus@lindgren.com</td>
+      
+      <td class="blk1">00.22 AM</td>
+      <td class="blk1">0767206555</td>
+      <td class="blk1">East Maryam</td>
+       <td>
+      <button class="button">Send</button></td>
+  </tr>
+  <tr>
+      <td class="blk">Hariett Morgan</td>
+      <td class="blk1">jabari_kiback@nelson.tv</td>
+      <td class="blk1">12.22 PM</td>
+      <td class="blk1">8666680327</td>
+      <td class="blk1">Monserratmouth</td>
+       <td>
+      <button class="button">Send</button></td>
+  </tr>
+  <tr>
+      <td class="blk">Susie Curry</td>
+      <td class="blk1">theo_giechener@kaia.org</td>
+      <td class="blk1">07.56 PM</td>
+      <td class="blk1">6478515280</td>
+      <td class="blk1">Lonnyburgh</td>
+       <td>
+      <button class="button">Send</button></td>
+  </tr>
+  <tr>
+      <td class="blk">Edgar Greer</td>
+      <td class="blk1">ankunding_ralpph@gmail.com</td>
+      <td class="blk1">08.35 PM</td>
+      <td class="blk1">8418517350</td>
+      <td class="blk1">Schmittfurt</td>
+       <td>
+      <button class="button3">Open</button></td>
+  </tr>
+  <tr>
+      <td class="blk">Minerva Massey</td>
+      <td class="blk1">lia.purdy@yahoo.com</td>
+      <td class="blk1">03.24 PM</td>
+      <td class="blk1">4885145012</td>
+      <td class="blk1">South Lori</td>
+      <td >
+      <button class="button3" >Open</button></td>
+       </tr>
+</tbody>
+</p>
+  
+  </table>
+</div></div></div></div-->
+
+</div>
+
+
+  </div>
+  <div id="Settings">
+  </div>
+
+  <div id="Mail">
+  </div>
+
+  <div id="Profile">
+  </div>
+
+  <div id="Folder">
+  </div>
+
+</div>
+  <div id="Campaingns">
+</div>
+<div id="Analytics">
+  </div>
+<!-- <canvas id="myCanvas1" style="width:500px;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<canvas id="myCanvas2" style="margin-left:300px;">Your browser does not support the HTML5 canvas tag.</canvas> -->
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+    <script  src="js/index.js"></script>
+
+
+</html>
+
+
+
+
+

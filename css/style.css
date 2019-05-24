@@ -1,0 +1,229 @@
+.v_tab {
+  overflow: hidden;
+  /*border: 1px solid #ccc;*/
+  background-color: white;
+   padding-left: 30%;
+}
+
+/* Style the buttons inside the v_tab */
+.v_tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  padding-bottom: 0;
+  transition: 0.3s;
+  font-size: 17px;
+  padding-left: 2%
+  padding-right:2%;
+
+}
+
+/* Change background color of buttons on hover */
+.v_tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current v_tablink class */
+.v_tab button.active {
+/*border-bottom-style: solid;*/
+}
+
+/* Style the v_tab content */
+.v_tabcontent {
+  display: none;
+ /* border: 1px solid #ccc;
+  border-top: none;*/
+}
+
+.button {
+  background-color: #3b22c9; 
+  border: none;
+  color: white;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: white; 
+  border: 1px solid grey;
+  color: grey;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8ac1e2;
+
+}
+
+.widget {
+    margin: 0 auto;
+    width:350px;
+    margin-top:50px;
+    background-color: #222D3A;
+   /* border-radius: 5px;*/
+    box-shadow: 0px 0px 1px 0px #06060d;
+}
+.con1{
+    
+    display: flex;
+    width: 40%;
+   /* border-width: 0px;
+    border-right-width: 0.5px;
+    border-left-width: 1px; 
+    border-color:#938e8e;
+    border-style: solid;
+    */
+}
+.header{
+    background-color: #29384D;
+    height:40px;
+    color:#929DAF;
+    text-align: center;
+    line-height: 40px;
+   /* border-top-left-radius: 7px;
+    border-top-right-radius: 7px;*/
+    font-weight: 400;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #06060d;
+}
+.contxt1 {
+
+ padding-top: 8px;
+ padding-left:35px;
+ line-height: 22px;
+ font-family: cambria;
+ width: 150%;
+font-color:black;
+ margin: 0;
+     /*border-width: 0px;
+    border-right-width: 0.5px;
+    border-left-width: 1px; 
+    border-color:#938e8e;
+    border-style: solid;*/
+
+ }
+
+.chart-container{
+    padding-top: 20px;
+    padding-left: 20%px;
+   }
+
+.shadow {
+    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+}
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  /*border: 1px solid #ccc;*/
+  background-color: white;
+  width: 5%;
+  height: 100vh;
+}
+
+.tab12 {
+  float: right;
+  /*border: 1px solid #ccc;*/
+  background-color: white;
+  width: 5%;
+  height: 100vh;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 1px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button:active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding:  1%;
+  /*border: 1px solid #ccc;*/
+  width: 94%;
+  /*border-left: none;*/
+  background-color: #e2eedd;
+}
+
+
+.fa {
+ color: #a6a6a6;
+  border: none;
+  /*color: white;*/
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: #1a1aff;
+}
+
+.fa:active{
+  color: #1a1aff;
+}
+
+#defaultOpen
+{
+  color:#1a1aff;
+}
+/*
+.v_tablinks
+{
+
+  color:#1a1aff;
+}
+*/
+.blk
+{
+color:black;
+}
+.blk1
+{
+color:grey;
+}
+
+.container
+{
+  border:none;
+}
+
+
+p.a {
+  font-family: "Courier New", Courier, monospace;
+}
